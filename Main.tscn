@@ -1,0 +1,335 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Ship.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://EdgeOfTheGalaxyRegular-OVEa6.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Music.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Achieved.mp3" type="AudioStream" id=7]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/gold.png-b1b0714ed178165d086117834beaf3b0.stex"
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/plaster.png-553bc823da07946dfac14c0e5c5e90e8.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/wood.png-320746db63b5a5eb1bb7f02275994b36.stex"
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/concrete.png-3327bed23e228e4e8c21dc2ce53ed2b9.stex"
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/metal.png-3410b2eb21cfaf23b8e137a575a2ee86.stex"
+
+[sub_resource type="StreamTexture" id=7]
+flags = 4
+load_path = "res://.import/cannonball.png-4a831713ee979e8df00fce48b7e22150.stex"
+
+[sub_resource type="DynamicFont" id=9]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 2
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
+
+[node name="Robots" type="Node2D" parent="."]
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="White Coral" parent="." instance=ExtResource( 2 )]
+position = Vector2( 378, 878 )
+
+[node name="Resources" type="Node2D" parent="."]
+position = Vector2( 0, 960 )
+
+[node name="BG" type="ColorRect" parent="Resources"]
+margin_top = -15.0
+margin_right = 749.0
+margin_bottom = 40.0
+color = Color( 0.211765, 0.054902, 0.443137, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gold" type="Node2D" parent="Resources"]
+position = Vector2( 10, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Gold"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Resources/Gold"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.988235, 0.858824, 0.301961, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Plaster" type="Node2D" parent="Resources"]
+position = Vector2( 150, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Plaster"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 3 )
+
+[node name="Label" type="Label" parent="Resources/Plaster"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.941176, 0.862745, 0.666667, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wood" type="Node2D" parent="Resources"]
+position = Vector2( 270, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Wood"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 4 )
+
+[node name="Label" type="Label" parent="Resources/Wood"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.811765, 0.552941, 0.356863, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Concrete" type="Node2D" parent="Resources"]
+position = Vector2( 390, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Concrete"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 5 )
+
+[node name="Label" type="Label" parent="Resources/Concrete"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.678431, 0.678431, 0.678431, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Metal" type="Node2D" parent="Resources"]
+position = Vector2( 510, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Metal"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 6 )
+
+[node name="Label" type="Label" parent="Resources/Metal"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.388235, 0.415686, 0.490196, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cannonballs" type="Node2D" parent="Resources"]
+position = Vector2( 630, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Icon" type="Sprite" parent="Resources/Cannonballs"]
+position = Vector2( 26, 12 )
+scale = Vector2( 0.28525, 0.28525 )
+texture = SubResource( 7 )
+
+[node name="Label" type="Label" parent="Resources/Cannonballs"]
+margin_left = 54.0
+margin_top = -5.0
+margin_right = 85.0
+margin_bottom = 39.0
+custom_colors/font_color = Color( 0.670588, 0.0431373, 0.0431373, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "000"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tips" type="Control" parent="."]
+margin_top = 825.0
+margin_right = 40.0
+margin_bottom = 865.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gold Tips" type="Polygon2D" parent="Tips"]
+visible = false
+color = Color( 0.934082, 1, 0.15625, 0.823529 )
+polygon = PoolVector2Array( 0, 0, 150, 0, 150, 100, 100, 100, 75, 125, 50, 100, 0, 100 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tips/Gold Tips"]
+margin_left = 5.0
+margin_top = 10.0
+margin_right = 145.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center] Gold is your Lifeforce. If it Reaches 0, 
+You Die[/center]"
+text = " Gold is your Lifeforce. If it Reaches 0, 
+You Die"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cannonball Tips" type="Polygon2D" parent="Tips"]
+visible = false
+position = Vector2( 600, 0 )
+color = Color( 0.282353, 0.0509804, 0.027451, 0.823529 )
+polygon = PoolVector2Array( 0, 0, 150, 0, 150, 100, 100, 100, 75, 125, 50, 100, 0, 100 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tips/Cannonball Tips"]
+margin_left = 5.0
+margin_top = 10.0
+margin_right = 145.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center] Craft Cannonballs using [C].
+Costs Concrete[/center]"
+text = " Craft Cannonballs using [C].
+Costs Concrete"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resource Tips" type="Polygon2D" parent="Tips"]
+visible = false
+position = Vector2( 50, -200 )
+color = Color( 0.356863, 0.356863, 0.356863, 0.823529 )
+polygon = PoolVector2Array( 0, 0, 150, 0, 150, 100, 100, 100, 50, 100, 0, 100 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tips/Resource Tips"]
+margin_left = 5.0
+margin_top = 10.0
+margin_right = 145.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center] Press [Esc] to Open the Crafting Menu and Shop[/center]"
+text = " Press [Esc] to Open the Crafting Menu and Shop"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Achievements" type="Node2D" parent="."]
+position = Vector2( 0, 300 )
+
+[node name="AchievementSound" type="AudioStreamPlayer" parent="Achievements"]
+stream = ExtResource( 7 )
+
+[node name="GUI" parent="." instance=ExtResource( 5 )]
+
+[node name="Spawner" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Tutorial" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+
+[node name="Score" type="Label" parent="."]
+margin_right = 167.0
+margin_bottom = 23.0
+custom_colors/font_color = Color( 0.054902, 1, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "SCORE: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Highscore" type="Label" parent="."]
+margin_left = 583.0
+margin_right = 750.0
+margin_bottom = 23.0
+custom_colors/font_color = Color( 1, 0, 0.913725, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "HIGHSCORE: 0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -20.0
+bus = "Music"
+
+[connection signal="timeout" from="Spawner" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Tutorial" to="." method="_on_Tutorial_timeout"]

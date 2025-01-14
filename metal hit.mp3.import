@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/metal hit.mp3-013049f1a5c4b25c47d8fa0a98d11d8d.mp3str"
+
+[deps]
+
+source_file="res://metal hit.mp3"
+dest_files=[ "res://.import/metal hit.mp3-013049f1a5c4b25c47d8fa0a98d11d8d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

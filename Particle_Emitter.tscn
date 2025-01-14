@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Particle_Emitter.tres" type="Material" id=1]
+[ext_resource path="res://Particle_Emitter.gd" type="Script" id=2]
+
+[node name="Particle_Emitter" type="Particles2D"]
+scale = Vector2( 10, 10 )
+emitting = false
+amount = 20
+one_shot = true
+explosiveness = 1.0
+randomness = 0.5
+process_material = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Sound Player" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+autoplay = true
+bus = "SFX"
+
+[connection signal="finished" from="Sound Player" to="." method="_on_Sound_Player_finished"]

@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Laserbeam.gd" type="Script" id=1]
+[ext_resource path="res://laserbeam.png" type="Texture" id=2]
+[ext_resource path="res://laser 2.mp3" type="AudioStream" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 40.0
+height = 82.0
+
+[node name="Laserbeam" type="Area2D"]
+position = Vector2( 0, 32 )
+scale = Vector2( 1, 0.89 )
+collision_layer = 8
+collision_mask = 8
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 475 )
+scale = Vector2( 0.5, 1 )
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 872 )
+shape = SubResource( 2 )
+
+[node name="Firing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_Laserbeam_body_entered"]
+[connection signal="finished" from="Firing" to="." method="_on_Firing_finished"]

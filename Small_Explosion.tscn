@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://explosion.png" type="Texture" id=1]
+[ext_resource path="res://explosion.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Small_Explosion.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 160, 160 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Small_Explosion" type="Area2D"]
+collision_layer = 5
+collision_mask = 5
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+
+[node name="Boom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+bus = "SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_Small_Explosion_body_entered"]
+[connection signal="finished" from="Boom" to="." method="_on_Boom_finished"]

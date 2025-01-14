@@ -1,0 +1,299 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Paper_test.PNG" type="Texture" id=1]
+[ext_resource path="res://Story.gd" type="Script" id=2]
+[ext_resource path="res://Story.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Pirate.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Iwalkonwater-GrJP.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 5 )
+
+[node name="Story" type="Node2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="page_11" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_11"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -184.0
+margin_top = -288.0
+margin_right = 171.0
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+After reading, he had two thoughts: “Wha' in the world be earth? This translator isn't mighty good“, and “Jerry? He must 'ave more gold if he's jus' throwin' these walls away. I'd better make me way t' 'im by shootin' these metal ships, destroyin' walls in me way 'n usin' the walls t' make me ship more durable 'n powerful!“ And so with his new goal in mind, Zack set out through outer space to find Jerry and steal his gold for himself.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_10" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_10"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+He grabbed it and after a few seconds, it changed to his language all on its own. He was amazed as to what he'd seen, and started reading what was on the rectangle:
+“Orders: Attack earth and seize their gold. Bring gold to Jerry, kill any earthlings if needed. PS: Ignore the walls floating around, Jerry has a new addiction of building walls but we no longer have space for them in the mother ship. Much love, your commanding officer.“
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_9" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_9"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+He ran over to the helm and turned himself toward it. Another red streak appeared, hitting his boat and making a small leak of gold. “If I’m goin' t' be here fer a while I'll needs t' make me ship stronger so that I don't lose me gold!“ He thought to himself. He was now close enough to see the speck from closer, and it almost seemed like its own vessel, but not a ship, a little circle. He turned the boat and shot at it and got 2 direct hits, turning it into a climactic explosion. He flew over to it, and noticed a little rectangle floating around that looked to have symbols on it.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_8" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_8"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+He looked to his right and it was… a wall? Not just any wall, but a golden wall. His jaw dropped at the sight. He rushed over to the cannons and shot at it. It took a few hits to destroy into small enough pieces to fit onto his ship, but he was able to float over and grab most of it. As he was grabbing the last few pieces, something flashed in front of his eyes. It was bright red, brighter than anything he'd seen before. He looked to his sides, and saw a little gray speck in the distance, then “pew“, another bright red light came inches from him.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_7" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_7"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+However, no gold would be lost, as there was no impact. Many seconds had passed and Zack decided to open his eyes. Everything seemed darker, as if it wasn't already dark enough. He looked around to see if the British were following him, but not only was there no ship, there was no water. He was floating, kilometers above the water, being splashed up by the wave. The boat was still going up, yet to show any sign of going down. He looked up into the abyss, nothing above him other than stars, until all of a sudden, “thud“.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_6" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_6"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+But their boat was out of sight. In fact, Zack was out of sight to anyone else, as he was suddenly caught in the middle of a giant tsunami. It came out of nowhere, one second he was in the open sea, the next he was surrounded by enormous waves. Upon looking forward again, he was headed straight toward a wave, and tried to turn away in time, but was unsuccessful. His boat went flying in the air, he jumped to the side and grabbed a rail as tightly as he could, preparing for impact. His eyes were closed as he was trembling at the thought of losing all of this gold.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_5" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_5"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+He jumped down into his boat and started sailing away, but before he could, one of the British soldiers jumped onto his boat. He fought a fierce battle, but Zack was able to knock him off into the water. He started sailing away, but the British quickly caught up to him in the new boat they'd bought. Zack knew he'd have to fight, he ran to one of his cannons and loaded it, then went back to the wheel, turned a sharp left and fired the cannon, right at the British boat.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_4" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_4"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -182.768
+margin_top = -288.0
+margin_right = 172.232
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+That night, when the men were passing off the gold bars, he threw a piece of metal into the water far from where he was, and the guards looked away from him. He took his chance and knocked a few of the guards out, and pushed the gold off the dock and onto his boat in the harbor. Some of it fell into the water but he knew he didn't have time to grab any of it. The other guards quickly turned toward him and started firing, but he got around the corner just in time to not get hit.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_3" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_3"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -184.0
+margin_top = -288.0
+margin_right = 171.0
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+One day however, just over a year after he'd started pirating, he wanted to go bigger. He'd heard of a deal going down in Tuvalu, where the British were buying a large boat from the Spanish for a hefty amount of gold. He got into his boat, and sailed toward Tuvalu all on his own. After a few days he arrived, and started scoping out the place. The deal was going down that night. After finishing up checking things out, he knew from where and when he'd attack.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_2" type="Sprite" parent="."]
+position = Vector2( 379, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_2"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -185.232
+margin_top = -288.0
+margin_right = 169.768
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+He left home when he was fourteen and within a few days, created the perfect crew. It consisted of one pirate, himself. Zack's logic was simple: if there were other people on his crew, he would have to split a share of gold with them. He grabbed all the gold his parents had saved up for him and bought a boat. Not the biggest pirate boat there was, but it was good enough for what he needed. He made a few modifications, including a gold tip to the bowsprit. Zack would make small hits onto British ships and seize a small amount of gold.
+                              "
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_1" type="Sprite" parent="."]
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="page_1"]
+modulate = Color( 0.0509804, 0.0470588, 0.0470588, 1 )
+margin_left = -184.0
+margin_top = -288.0
+margin_right = 171.0
+margin_bottom = 255.0
+custom_fonts/normal_font = ExtResource( 3 )
+text = "          
+Zack Finch is a simple pirate. He's not the meanest or most evil pirate, but he is the cleverest. He wants to be the richest pirate on earth, and he wants to know how to get the most gold. He didn't quite know how yet, but he knew he would eventually, if he kept learning. His parents were simple farmers, they owned a big farm with different animals and plants, but Zack didn't enjoy it much. He thought he could do something more exciting with his life, he knew he was destined for more.
+                              
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_0" type="Sprite" parent="."]
+modulate = Color( 0.356863, 0.2, 0.2, 1 )
+position = Vector2( 377, 500 )
+scale = Vector2( 1.62288, 1.52352 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Abandon" type="Button" parent="."]
+margin_left = 265.0
+margin_top = 925.0
+margin_right = 485.0
+margin_bottom = 962.0
+custom_fonts/font = SubResource( 1 )
+text = "Abandon The Story"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pirate" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+bus = "Music"
+
+[connection signal="pressed" from="Abandon" to="." method="_on_Abandon_pressed"]

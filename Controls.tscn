@@ -1,0 +1,148 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Controls.gd" type="Script" id=1]
+[ext_resource path="res://EdgeOfTheGalaxyRegular-OVEa6.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+extra_spacing_char = 5
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+extra_spacing_char = 5
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.00784314, 0.0588235, 0.32549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -279.0
+margin_top = -417.0
+margin_right = 289.0
+margin_bottom = -375.0
+custom_colors/default_color = Color( 0.858824, 0.619608, 0.164706, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Settings[/center]"
+tab_size = 5
+text = "Settings"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial Button" type="CheckButton" parent="."]
+margin_left = 200.0
+margin_top = 200.0
+margin_right = 550.0
+margin_bottom = 252.0
+custom_colors/font_color = Color( 0.858824, 0.619608, 0.164706, 1 )
+custom_colors/font_color_pressed = Color( 0.858824, 0.619608, 0.164706, 1 )
+custom_fonts/font = SubResource( 3 )
+pressed = true
+text = "Show Tutorials"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -279.0
+margin_top = -177.0
+margin_right = 289.0
+margin_bottom = -135.0
+custom_colors/default_color = Color( 0.858824, 0.619608, 0.164706, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Music Volume[/center]"
+text = "Music Volume"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music Slider" type="HSlider" parent="."]
+margin_left = 184.0
+margin_top = 391.0
+margin_right = 384.0
+margin_bottom = 407.0
+rect_min_size = Vector2( 200, 0 )
+rect_scale = Vector2( 2, 2 )
+min_value = -40.0
+max_value = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SFX" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -284.0
+margin_top = -24.0
+margin_right = 284.0
+margin_bottom = 18.0
+custom_colors/default_color = Color( 0.858824, 0.619608, 0.164706, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]SFX Volume[/center]"
+tab_size = 5
+text = "SFX Volume"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SFX Slider" type="HSlider" parent="."]
+margin_left = 184.0
+margin_top = 544.0
+margin_right = 384.0
+margin_bottom = 560.0
+rect_min_size = Vector2( 200, 0 )
+rect_scale = Vector2( 2, 2 )
+min_value = -40.0
+max_value = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="."]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 120.0
+margin_bottom = 56.0
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="toggled" from="Tutorial Button" to="." method="_on_Tutorial_Button_toggled"]
+[connection signal="value_changed" from="Music Slider" to="." method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="SFX Slider" to="." method="_on_HSlider2_value_changed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
